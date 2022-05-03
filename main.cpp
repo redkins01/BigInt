@@ -14,7 +14,7 @@ TEST_CASE("BigInt") {
     ss << r;
     CHECK(ss.str() == "1579");
   }
-
+/*
   SUBCASE("Less Than 1") {
     ds::BigInt a("10");
     ds::BigInt b("11");
@@ -47,7 +47,7 @@ TEST_CASE("BigInt") {
     ss << r;
     CHECK(ss.str() == "0");
   }
-
+*/
   SUBCASE("Subtraction 3") {
     ds::BigInt a("3564977655549");
     ds::BigInt b("4528625862583");
@@ -56,7 +56,7 @@ TEST_CASE("BigInt") {
     ss << r;
     CHECK(ss.str() == "963648207034");
   }
-
+  
   SUBCASE("Subtraction 4") {
     ds::BigInt a("1456");
     ds::BigInt b("1123");

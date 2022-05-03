@@ -45,7 +45,10 @@ bool BigInt::operator<(const BigInt &other) const{
   }
   else {
     for (int i = 0; i < this->digits.size(); i++) {
-      if (this->digits.get(i) < other.digits.get(i)) {
+      if (this->digits.get(i) > other.digits.get(i)) {
+        return false;
+      }
+      else if (this->digits.get(i) < other.digits.get(i)) {
         return true;
       }
     }

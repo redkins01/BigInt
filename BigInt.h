@@ -142,6 +142,7 @@ BigInt BigInt::operator-(const BigInt &other) const {
     
     if (overflow) {
       difference -= 1;
+      overflow = false;
     }
     if (difference < 0) {
       difference += 10;

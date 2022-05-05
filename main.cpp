@@ -7,12 +7,12 @@
 TEST_CASE("BigInt") {
 
   SUBCASE("Addition") {
-    ds::BigInt a("456");
-    ds::BigInt b("1123");
+    ds::BigInt a("9");
+    ds::BigInt b("9");
     ds::BigInt r = a + b;
     std::stringstream ss;
     ss << r;
-    CHECK(ss.str() == "1579");
+    CHECK(ss.str() == "18");
   }
 
   SUBCASE("Less Than 1") {
